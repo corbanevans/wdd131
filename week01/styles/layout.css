@@ -1,0 +1,50 @@
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; /* Header, Nav, Main, Footer */
+    grid-template-columns: 1fr; 
+    min-height: 100vh; /* the body takes up at least the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+header {
+    background-color: #333; 
+    color: white; /* header text color */
+    padding: 20px; 
+    grid-column: 1 / -1; /* to make the header span the full width of the screen */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #161616; 
+    padding: 10px; 
+    grid-column: 1 / -1; /* to make the nav span the full width of the screen */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Main content and sidebar */
+}
+
+.main-content {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.right-sidebar {
+    padding: 20px;
+
+}
+
+footer {
+    background-color: #333; 
+    color: white; 
+    padding: 20px; 
+    grid-column: 1 / -1; 
+    text-align: center;
+}
