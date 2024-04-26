@@ -9,8 +9,12 @@ body {
 header {
     background-color: #333; 
     color: white; /* header text color */
-    padding: 20px; 
+
     grid-column: 1 / -1; /* to make the header span the full width of the screen */
+}
+
+h1 {
+    padding: 20px; 
 }
 
 nav {
@@ -18,7 +22,6 @@ nav {
     justify-content: space-around;
     background-color: #161616; 
     padding: 10px; 
-    grid-column: 1 / -1; /* to make the nav span the full width of the screen */
 }
 
 nav a {
@@ -29,6 +32,7 @@ nav a {
 main {
     display: grid;
     grid-template-columns: 3fr 1fr; /* Main content and sidebar */
+    
 }
 
 .main-content {
