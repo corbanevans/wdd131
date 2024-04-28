@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Corban Evans</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals. Corban Evans. Web development, HTML, CSS, JavaScript, and more.">
+    <meta name="author" content="Corban Evans">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Corban Evans</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/corban-evans-8070321b1">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/7?lang=eng&id=p11-p13#p11">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-content about-me-card">
+                <p class="about-me-content">I’m Corban Evans. I wear hearing aids, delve into Dungeons and Dragons adventures, and have been
+                    happily married for a year. My shelves overflow with movie collections, and I’m a walking
+                    encyclopedia of random film facts. Originally from Ohio, I now call Rexburg, Idaho, home.
+                </p>
+                <img src="/images/self-image.png" alt="Picture of Me" class="right-top">
+            </div>
+        </section>
+        <section class="card">
+            <h2>Development Resources</h2>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/default.asp">W3 Schools</a></li>
+                    <li><a href="https://codepen.io/">CodePen</a></li>
+                    <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Corban Evans. USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Dynamically set the current year
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+        // Dynamically set the last modified date
+        document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>
