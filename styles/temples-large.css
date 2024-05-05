@@ -1,0 +1,33 @@
+.image-grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center; /* Center horizontally */
+}
+
+figure {
+    margin: 0;
+    width: 100%; /* Ensure images take up full width of their container */
+}
+
+img {
+    width: 100%; /* Ensure images take up full width of their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (min-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

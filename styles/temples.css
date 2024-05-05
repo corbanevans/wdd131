@@ -1,0 +1,106 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-grid {
+    display: grid;
+    max-width: 80%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+.page-name {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.icon {
+    display: none;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .header {
+        position: relative; /* Add position relative to the header */
+    }
+
+    .icon {
+        position: absolute; /* Position the icon absolutely within the header */
+        top: 20px; /* Adjust top positioning as needed */
+        right: 20px; /* Adjust right positioning as needed */
+        display: block;
+    }
+
+    nav {
+        position: absolute; /* Position the nav absolutely within the header */
+        top: 100%; /* Position it below the header */
+        left: 0;
+        right: 0;
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        align-items: center; /* Center navigation links horizontally */
+        background-color: #333; /* Add background color */
+    }
+
+    nav.responsive {
+        display: flex; /* Show navigation links when the hamburger icon is clicked */
+        justify-content: center; /* Center navigation links horizontally */
+    }
+
+    nav.responsive a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .main.responsive {
+        margin-top: 30%;
+    }
+}
