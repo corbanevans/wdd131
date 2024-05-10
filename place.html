@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place | Greece</title>
+    <meta name="author" content="Corban Evans">
+    <meta name="description" content="Information about Greece">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Greece</h1>
+        <nav>
+            <div class="image-logo">
+                <img src="images/greek_flag.png" alt="Official Flag of Greece" width="150">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/greece_horizontal.jpg" media="(min-width: 1000px)">
+                <img src="images/greece_vertical.jpg" alt="Landscape of Athens, Greece" width="500" height="250">
+            </picture>
+        </div>
+        <div class="content-container">
+            <div class="flexbox-item-1">
+                <h2>Data</h2>
+                <div class="label-container">
+                    <div class="data-item">
+                        <span class="label">Area:</span>
+                        <span class="value">131,957 sq km</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Population:</span>
+                        <span class="value">10.57 million</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Capital:</span>
+                        <span class="value">Athens</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Language:</span>
+                        <span class="value">Modern Greek, English</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Currency:</span>
+                        <span class="value">Euro</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Time Zone:</span>
+                        <span class="value">UTC +3 (EEST)</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Calling Code:</span>
+                        <span class="value">+30</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Internet TDL:</span>
+                        <span class="value">.gr</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flexbox-item-2">
+                <h2 class="after">Weather</h2>
+                <div class="image-weather">
+                    <img src="images/weather_partly_cloudy_icon.svg" alt="weather sunny icon" width="150">
+                </div>
+                <div class="label-container">
+                    <div class="data-item">
+                        <span class="label">Temperature:</span>
+                        <span id="temperature-info" class="value"></span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Conditions:</span>
+                        <span class="value">Partly Cloudy</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Wind:</span>
+                        <span id="wind-speed" class="value"></span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Wind Chill:</span>
+                        <span id="windchill-factor" class="value"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Corban Evans. USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
