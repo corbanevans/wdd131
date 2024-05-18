@@ -1,0 +1,33 @@
+.temple-display {
+    display: grid;
+    gap: 20px;
+    justify-content: center; /* Center horizontally */
+}
+
+figure {
+    margin: 0;
+    width: 90%; 
+}
+
+img {
+    width: 90%; 
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (min-width: 768px) {
+    .temple-display {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .temple-display {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .temple-display {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
