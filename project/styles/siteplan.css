@@ -9,7 +9,6 @@
   
 .roboto-condensed-normal {
     font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -27,7 +26,7 @@ body {
 /* Text color */
 p, ul, li {
     color: #ebebeb; /* Text */
-    font-family: Roboto Condensed;
+    font-family: "Roboto Condensed";
 }
 
 /* Headlines and Links color */
@@ -42,7 +41,7 @@ p, ul, li {
 
 h1, h2, h3 {
     color: #15eda3;
-    font-family: Poppins;
+    font-family: "Poppins";
 }
 
 a {
